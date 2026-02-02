@@ -22,7 +22,6 @@
       align-items: center;
       justify-content: center;
       color: #fff;
-      overflow: hidden;
     }
 
     .card {
@@ -33,8 +32,6 @@
       max-width: 360px;
       text-align: center;
       box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-      position: relative;
-      z-index: 2;
     }
 
     .heart {
@@ -60,6 +57,9 @@
     }
 
     .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
       position: relative;
       margin-top: 10px;
       height: 50px;
@@ -82,6 +82,7 @@
     }
 
     #yesBtn:hover {
+      background: #ff1e4d;
       transform: scale(1.05);
     }
 
@@ -97,6 +98,7 @@
       display: none;
     }
 
+    /* Signature */
     .signature {
       margin-top: 20px;
       font-family: 'Pacifico', cursive;
@@ -104,33 +106,17 @@
       color: #f3c4ff;
       opacity: 0.85;
     }
-
-    /* Confetti */
-    .confetti {
-      position: fixed;
-      width: 8px;
-      height: 8px;
-      top: -10px;
-      animation: fall linear forwards;
-      z-index: 1;
-    }
-
-    @keyframes fall {
-      to {
-        transform: translateY(110vh) rotate(360deg);
-      }
-    }
   </style>
 </head>
 
 <body>
-
   <div class="card">
     <div class="heart">💜</div>
     <h2>Midey 😍<br>Will you be my Valentine?</h2>
 
-    <img id="yesGif" class="gif" src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif">
-    <img id="noGif" class="gif" src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif">
+    <!-- GIF reactions -->
+    <img id="yesGif" class="gif" src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif" alt="Happy GIF">
+    <img id="noGif" class="gif" src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="Funny GIF">
 
     <div class="buttons">
       <button id="yesBtn">Yes 💖</button>
@@ -142,6 +128,7 @@
       You just made my day 💕
     </div>
 
+    <!-- Signature -->
     <div class="signature">— from Bernard</div>
   </div>
 
@@ -165,27 +152,10 @@
       yesGif.style.display = "block";
       noGif.style.display = "none";
       msg.style.display = "block";
+
       yesBtn.style.display = "none";
       noBtn.style.display = "none";
-
-      launchConfetti();
     });
-
-    function launchConfetti() {
-      const colors = ["#ff4d6d", "#ffd166", "#c77dff", "#4cc9f0", "#f72585"];
-
-      for (let i = 0; i < 120; i++) {
-        const confetti = document.createElement("div");
-        confetti.className = "confetti";
-        confetti.style.left = Math.random() * 100 + "vw";
-        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-        confetti.style.animationDuration = Math.random() * 3 + 2 + "s";
-        confetti.style.opacity = Math.random();
-        document.body.appendChild(confetti);
-
-        setTimeout(() => confetti.remove(), 5000);
-      }
-    }
   </script>
 </body>
 </html>
