@@ -1,64 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ShopDemo - Home</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopDemo | Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-    <div class="logo">ShopDemo</div>
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="clothes.html">Clothes</a></li>
-        <li><a href="bags.html">Bags</a></li>
-        <li><a href="shoes.html">Shoes</a></li>
-    </ul>
-</nav>
+    <nav>
+        <div class="logo">BenClothings</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="clothes.html">Clothes</a></li>
+            <li><a href="bags.html">Bags</a></li>
+            <li><a href="shoes.html">Shoes</a></li>
+        </ul>
+    </nav>
 
-<section class="hero">
-    <img src="https://picsum.photos/1200/400?random=1" alt="Shop Hero">
-    <h1>Welcome to ShopDemo</h1>
-    <p>Click a category below to start shopping!</p>
-</section>
+    <header class="hero" style="background-image: url('https://picsum.photos/id/1070/1200/600');">
+        <div>
+            <h1>Welcome to ShopDemo</h1>
+            <p>Quality products at your fingertips</p>
+        </div>
+    </header>
 
-<section class="categories">
-    <h2>Shop by Category</h2>
-    <div class="category-cards">
-        <a href="clothes.html" class="card">
-            <img src="https://picsum.photos/300/200?random=2" alt="Clothes">
-            <h3>Clothes</h3>
-        </a>
-        <a href="bags.html" class="card">
-            <img src="https://picsum.photos/300/200?random=3" alt="Bags">
-            <h3>Bags</h3>
-        </a>
-        <a href="shoes.html" class="card">
-            <img src="https://picsum.photos/300/200?random=4" alt="Shoes">
-            <h3>Shoes</h3>
-        </a>
-    </div>
-</section>
+    <section class="container">
+        <h2>Shop by Category</h2>
+        <div class="grid">
+            <a href="clothes.html" class="card">
+                <img src="https://picsum.photos/id/225/400/400" alt="Clothes">
+                <h3>Clothes</h3>
+            </a>
+            <a href="bags.html" class="card">
+                <img src="https://picsum.photos/id/357/400/400" alt="Bags">
+                <h3>Bags</h3>
+            </a>
+            <a href="shoes.html" class="card">
+                <img src="https://picsum.photos/id/21/400/400" alt="Shoes">
+                <h3>Shoes</h3>
+            </a>
+        </div>
+    </section>
 
-<a href="https://wa.me/2349114133756" target="_blank" class="whatsapp-btn">Chat on WhatsApp</a>
-<a href="#" class="back-to-top" id="backToTop">↑ Top</a>
+    <a href="https://wa.me/2349114133756" class="floating-wa">💬</a>
+    <button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Top</button>
 
-<script>
-// Back to top button functionality
-const backToTop = document.getElementById("backToTop");
-window.onscroll = function() {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        backToTop.style.display = "block";
-    } else {
-        backToTop.style.display = "none";
-    }
-};
-backToTop.addEventListener("click", () => {
-    window.scrollTo({top: 0, behavior: 'smooth'});
-});
-</script>
-
+    <script>
+        window.onscroll = function() {
+            let btn = document.getElementById("backToTop");
+            if (document.documentElement.scrollTop > 300) { btn.style.display = "block"; } 
+            else { btn.style.display = "none"; }
+        };
+    </script>
 </body>
 </html>
