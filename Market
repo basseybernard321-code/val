@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ports Marketplace</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #222;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 16px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    .hero {
+      padding: 40px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #4f46e5, #9333ea);
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: white;
+      color: #4f46e5;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 40px 20px;
+    }
+
+    .section h3 {
+      text-align: center;
+      margin-bottom: 24px;
+      font-size: 22px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .card h4 {
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .contact {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .contact a {
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 12px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 12px;
+      font-size: 13px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Ports Marketplace</h1>
+  </header>
+
+  <section class="hero">
+    <h2>Buy & Sell Digital Services Safely</h2>
+    <p>A trusted marketplace for digital products, logins, and services.</p>
+    <a href="#services" class="btn">Explore Marketplace</a>
+  </section>
+
+  <section class="section" id="services">
+    <h3>What We Offer</h3>
+
+    <div class="cards">
+      <div class="card">
+        <h4>Digital Accounts</h4>
+        <p>Secure access to verified digital services.</p>
+      </div>
+
+      <div class="card">
+        <h4>Fast Delivery</h4>
+        <p>Instant or same-day delivery on most items.</p>
+      </div>
+
+      <div class="card">
+        <h4>Trusted Sellers</h4>
+        <p>Only verified sellers allowed on the platform.</p>
+      </div>
+
+      <div class="card">
+        <h4>Customer Support</h4>
+        <p>We’re here to help you 24/7.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h3>Get Started Today</h3>
+    <p>Have questions or want to sell on Ports Marketplace?</p>
+    <a href="https://wa.me/234XXXXXXXXXX">Chat on WhatsApp</a>
+  </section>
+
+  <footer>
+    © 2026 Ports Marketplace. All rights reserved.
+  </footer>
+
+</body>
+</html>
