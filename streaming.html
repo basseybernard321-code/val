@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Streaming Accounts</title>
+
+<style>
+body { margin:0; font-family: Arial; background:#f4f6f8; }
+header { background:#2563eb; color:#fff; padding:15px; text-align:center; }
+.list { padding:30px; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:15px; }
+.item { background:#fff; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,.08); }
+.item span { font-weight:bold; color:#2563eb; }
+.item a { display:inline-block; margin-top:10px; text-decoration:none; background:#0f172a; color:#fff; padding:8px 14px; border-radius:20px; }
+.back { margin:15px; display:inline-block; }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>Streaming Accounts</h2>
+  <p>Available accounts</p>
+</header>
+
+<a class="back" href="index.html">← Back</a>
+
+<section class="list">
+  <div class="item">
+    <h4>Netflix Premium</h4>
+    <span>$5</span>
+    <br>
+    <a href="checkout.html?item=Netflix&price=5">Buy</a>
+  </div>
+
+  <div class="item">
+    <h4>Spotify Premium</h4>
+    <span>$3</span>
+    <br>
+    <a href="checkout.html?item=Spotify&price=3">Buy</a>
+  </div>
+
+  <div class="item">
+    <h4>Amazon Prime</h4>
+    <span>$4</span>
+    <br>
+    <a href="checkout.html?item=Prime&price=4">Buy</a>
+  </div>
+</section>
+
+</body>
+</html>
